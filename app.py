@@ -45,10 +45,10 @@ if not os.path.exists(FONT_PATH):
 def get_janome_tokenizer():
     try:
         tokenizer = Tokenizer()
-        st.success("Janomeトークナイザーの準備ができました。")
+        #st.success("Janomeトークナイザーの準備ができました。")
         return tokenizer, True
     except Exception as e:
-        st.warning(f"Janomeトークナイザーの初期化に失敗しました: {e}\n簡易的な文字数での改行にフォールバックします。")
+        #st.warning(f"Janomeトークナイザーの初期化に失敗しました: {e}\n簡易的な文字数での改行にフォールバックします。")
         return None, False
 
 janome_tokenizer, janome_available = get_janome_tokenizer()
