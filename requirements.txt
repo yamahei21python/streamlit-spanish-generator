@@ -1,0 +1,7 @@
+streamlit
+gtts
+pydub
+moviepy
+Pillow
+janome
+tqdm
